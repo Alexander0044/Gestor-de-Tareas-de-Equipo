@@ -18,8 +18,15 @@ public class Main {
             System.out.print("Elige una opcion: ");
 
             opcion = sc.nextInt();
+            sc.nextLine(); // limpia el salto de linea
 
             switch (opcion) {
+                case 1:
+                    System.out.print("Introduce la descripcion de la tarea: ");
+                    String descripcion = sc.nextLine();
+                    gestor.añadirTarea(descripcion);
+                    System.out.println("Tarea añadida");
+                    break;
 
                 case 2:
                     gestor.mostrarTareas();

@@ -20,4 +20,8 @@ public class GestorTareas {
             System.out.println((i + 1) + ". " + t.getDescripcion());
         }
     }
+
+    public void añadirTarea(String descripcion) {
+        tareas.add(new Tarea(descripcion));
+    }
 }
